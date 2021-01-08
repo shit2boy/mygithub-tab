@@ -9,7 +9,7 @@ const Profile = ({ user }) => {
           <div className="avatar">
             <img
               src={user.avatar_url}
-              width="300px"
+              width="250px"
               className="round-img img_avatar"
               alt="avatar"
             />
