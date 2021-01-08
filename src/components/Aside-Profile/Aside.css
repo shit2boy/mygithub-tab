@@ -11,3 +11,12 @@ aside {
   margin: 20px 0px;
   border-bottom: 1px dotted #dddddd;
 }
+
+@media screen and (max-width: 600px) {
+  .img_avatar {
+    width: 50px;
+  }
+  .small-view {
+    display: inline;
+  }
+}

@@ -31,7 +31,7 @@ const RepositoryCard = ({ repos }) => {
             </div>
             <div className="right-col">
               <div className="badge py-2 px-3 badge-light">
-                <span className="fas fa-star"> star</span>
+                <span className="far fa-star"> Star</span>
               </div>
 
               <div>
