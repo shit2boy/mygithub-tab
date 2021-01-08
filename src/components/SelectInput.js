@@ -14,18 +14,6 @@ const SelectInput = (props) => {
         <Dropdown.Item href="#/action-2">Another </Dropdown.Item>
         <Dropdown.Item href="#/action-3">Something </Dropdown.Item>
       </DropdownButton>
-
-      {/* <select
-        value="seslet"
-        onChange="they"
-        name="shopId"
-        //   {!riderAvailable ? disabled: null}
-      >
-        <option value={props.value}>{props.value}</option>
-        <option value="ig">html</option>
-        <option value="ig">html</option>
-        <option value="ig">html</option>
-      </select> */}
     </>
   );
 };

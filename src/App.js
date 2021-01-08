@@ -49,20 +49,6 @@ const App = () => {
     getUserRepos();
   }, []);
 
-  // const getRepo = (text)=>{
-  // repo.filter((data) => {
-  //   if (text === null) {
-  //     return data.item;
-  //   } else if (
-  //     data.name
-  //       .toLowerCase()
-  //       .includes(text.toLowerCase())
-  //   ) {
-  //     return data.item;
-  //   }
-  //   return null;
-  // })
-  //   }
   const onChange = (e) => {
     const searchRepo = repos.filter((item) => {
       console.log(item["name"]);
@@ -75,18 +61,6 @@ const App = () => {
     if (e.target.value === "") setText(repos);
   };
 
-  // const onChange = (e) => {
-  //   setText(e.target.value);
-  // };
-
-  // const getUser = async (username) => {
-  //   const res = await axios.get(
-  //     `https://api.github.com/users/${username}?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-  //   );
-  //   console.log(this.state.user);
-  //   setUser(res.data.items);
-  //   setLoading(false);
-  // };
   if (loading) {
     return <Spinner />;
   } else {
