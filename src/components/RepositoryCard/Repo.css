@@ -1,0 +1,21 @@
+.repo-card {
+  padding: 1rem;
+  border-top: #ddd 1px dotted;
+  margin: 0.7rem 0;
+}
+.repo-text {
+  color: #0366d6;
+}
+.repo-input {
+  width: 550px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  /* background-image: url("../../Assesst/search.svg");
+  background-position: right; */
+  background-repeat: no-repeat;
+  padding: 7px 10px 10px 7px;
+  /* transition: width 0.4s ease-in-out; */
+}

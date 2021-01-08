@@ -1,0 +1,21 @@
+.tab a {
+  color: #333;
+}
+.tab a:hover {
+  /* color: #f1f1f1; */
+  /* border-left: 10px solid #004281; */
+  /* background: #004281; */
+  border-bottom: 2px solid #dddddd;
+  /* background: rgba(140, 145, 150, 1); */
+}
+.tab {
+  border-bottom: 1px dotted #dddddd;
+  margin-bottom: top;
+}
+.tab-item-active {
+  border-bottom: 2px solid #cc0505;
+}
+.tab-container {
+  padding-bottom: 0%;
+  margin-bottom: 0px;
+}

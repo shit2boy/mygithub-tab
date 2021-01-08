@@ -1,0 +1,41 @@
+nav {
+  font-size: 20px;
+  /* font-weight: bold; */
+  /* color: white; */
+  border-bottom: 1px solid;
+}
+
+nav a {
+  text-decoration: none;
+  color: white !important;
+}
+/* i {
+  color: white;
+} */
+
+.nav-input {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  background-image: url("../../Assesst/search.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 7px 10px 10px 7px;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-input:focus {
+  width: 300px;
+}
+.round-img {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+}
