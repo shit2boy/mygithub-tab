@@ -8,6 +8,16 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Spinner from "./components/Spinner";
 
+let githubClientId;
+let githubClientSecret;
+if (process.env.NODE_ENV !== "production") {
+  githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+  githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
+} else {
+  githubClientId = process.env.GITHUB_CLIENT_ID;
+  githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
+}
+
 const App = () => {
   const [user, setUser] = useState({});
   const [loading, setLoading] = useState(false);
@@ -17,7 +27,7 @@ const App = () => {
   useEffect(() => {
     const getUser = async () => {
       const res = await axios.get(
-        `https://api.github.com/users/shit2boy?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+        `https://api.github.com/users/shit2boy?client_id=${githubClientId}&client_secret=${githubClientSecret}`
       );
       console.log(res.data);
       setUser(res.data);
@@ -26,7 +36,7 @@ const App = () => {
     const getUserRepos = async () => {
       // this.setState({ loading: true });
       const res = await axios.get(
-        `https://api.github.com/users/shit2boy/repos?&sort=created:asc&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+        `https://api.github.com/users/shit2boy/repos?&sort=created:asc&client_id=${githubClientId}&client_secret=${githubClientSecret}`
       );
       // this.setState({ user: res.data, loading: false });
       // console.log(this.state.user);
